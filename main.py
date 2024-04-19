@@ -168,4 +168,4 @@ async def on_message(message):
             await message.channel.send("Время на ответ вышло.")
 
        
-bot.run("MTIyODk0ODgyODA0OTExMzEzOQ.Gh9wUb.NvI2zfOvCOPEbx-rwZriv2BxJF8DXiVk7uZkoY")
+bot.run("")
