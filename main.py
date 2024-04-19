@@ -70,7 +70,7 @@ commands_list = [
     "5. F!trees - Определяет, какое дерево изображено на фото (Дуб или Сосна)",
     "6. F!send — отправляет текст введённый пользователем",
     "7. F!eco_resources - Получить ссылки на полезные ресурсы о защите окружающей среды.",
-    "8. F!тест — выдает случайные вопросы на тему всего мира."
+    "8. F!test — выдает случайные вопросы на тему всего мира."
 ]
 
 advice_list = [
@@ -148,7 +148,7 @@ def check_answer(question, user_answer):
     return user_answer == correct_answer.lower()
 
 
-@bot.command(name='тест')
+@bot.command(name='test')
 async def on_message(message):
         question = get_random_question()
         await message.channel.send(question)
