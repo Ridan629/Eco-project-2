@@ -100,7 +100,7 @@ async def facts(ctx):
     await ctx.send("\n".join(random_facts))
 
 @bot.command()
-async def facts2(ctx):
+async def factsaz(ctx):
     random_facts = random.sample(facts_az_ecology, 2)
     await ctx.send("\n".join(random_facts))    
     
