@@ -160,8 +160,6 @@ async def on_message(message):
             user_answer = await bot.wait_for('message', check=check, timeout=15)
             if check_answer(question.split("\n")[0], user_answer.content):
                 await message.channel.send("Правильно!")
-                question = get_random_question()
-                await message.channel.send(question)
             else:
                  await message.channel.send("Неправильно.")
         except asyncio.TimeoutError:
